@@ -1,9 +1,12 @@
+using TMPro;
 using UnityEngine;
 
 public class LightingEvaluator : MonoBehaviour
 {
     public Transform lightTransform;
     public Transform subjectTransform;
+
+    public TMP_Text AngleT;
 
     void Update()
     {
@@ -20,9 +23,14 @@ public class LightingEvaluator : MonoBehaviour
                 Vector3.up
             );
 
+        AngleT.text =
+            "Current Angle: " +
+            angle.ToString("F1");
+        /*
         Debug.Log(
             "Current Angle: " +
             angle.ToString("F1")
         );
+        */
     }
 }

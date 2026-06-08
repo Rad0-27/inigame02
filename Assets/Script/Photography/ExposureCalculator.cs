@@ -1,4 +1,7 @@
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ExposureCalculator : MonoBehaviour
 {
@@ -8,12 +11,15 @@ public class ExposureCalculator : MonoBehaviour
     public Transform lightTransform;
     public Transform subjectTransform;
 
+    public TMP_Text ExText;
+
     [HideInInspector]
     public float exposureValue;
 
     void Update()
     {
         CalculateExposure();
+        ExText.text = exposureValue.ToString("F2");
     }
 
     void CalculateExposure()
@@ -44,6 +50,6 @@ public class ExposureCalculator : MonoBehaviour
         exposureValue =
             lightContribution *
             cameraContribution;
-        Debug.Log(exposureValue);
+        //Debug.Log(exposureValue);
     }
 }
