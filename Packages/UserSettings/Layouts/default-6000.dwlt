@@ -630,7 +630,7 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -3704
+      - m_Data: -1342
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1553,12 +1553,12 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 21452
+    - m_Data: 20986
     m_LastClickedID:
-      m_Data: 21452
+      m_Data: 20986
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 21452
+    - m_Data: 20986
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1591,7 +1591,9 @@ MonoBehaviour:
     m_SelectedIDs: []
     m_LastClickedID:
       m_Data: 0
-    m_ExpandedIDs: []
+    m_ExpandedIDs:
+    - m_Data: 0
+    - m_Data: 20986
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
