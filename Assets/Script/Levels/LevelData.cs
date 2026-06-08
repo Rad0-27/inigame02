@@ -13,7 +13,7 @@ public class LevelData : ScriptableObject
 
     [Header("Target Values")]
     public float targetAngle;
-    public float targetExposure;
+    public float targetEV;
 
     [Header("Scoring")]
     public float passScore = 80f;

@@ -8,6 +8,8 @@ public class LightingEvaluator : MonoBehaviour
 
     public TMP_Text AngleT;
 
+    public float currentAngle;
+
     void Update()
     {
         Vector3 direction =
@@ -16,16 +18,18 @@ public class LightingEvaluator : MonoBehaviour
 
         direction.y = 0f;
 
-        float angle =
-            Vector3.SignedAngle(
-                Vector3.forward,
-                direction,
-                Vector3.up
+        currentAngle =
+            Mathf.Abs(
+                Vector3.SignedAngle(
+                    Vector3.forward,
+                    direction,
+                    Vector3.up
+                )
             );
 
         AngleT.text =
-            "Current Angle: " +
-            angle.ToString("F1");
+            "Angle: " +
+            currentAngle.ToString("F1");
         /*
         Debug.Log(
             "Current Angle: " +

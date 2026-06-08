@@ -4,6 +4,8 @@ public class PhotoCapture : MonoBehaviour
 {
     int photoIndex = 0;
 
+    public EvaluationManager evaluationManager;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -25,7 +27,7 @@ public class PhotoCapture : MonoBehaviour
             "Photo Captured: " +
             fileName
         );
-
+        evaluationManager.EvaluatePhoto();
         photoIndex++;
     }
 }

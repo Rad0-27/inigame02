@@ -11,15 +11,22 @@ public class ExposureCalculator : MonoBehaviour
     public Transform lightTransform;
     public Transform subjectTransform;
 
+    public float targetExposure = 1200f;
+
     public TMP_Text ExText;
 
     [HideInInspector]
     public float exposureValue;
 
+    [HideInInspector]
+    public float exposureEV;
+
     void Update()
     {
         CalculateExposure();
-        ExText.text = exposureValue.ToString("F2");
+        ExText.text =
+            "EV : " +
+            exposureEV.ToString("F2");
     }
 
     void CalculateExposure()
@@ -51,5 +58,12 @@ public class ExposureCalculator : MonoBehaviour
             lightContribution *
             cameraContribution;
         //Debug.Log(exposureValue);
+
+        exposureEV =
+            Mathf.Log(
+        exposureValue /
+        targetExposure,
+        2f
+        );
     }
 }
