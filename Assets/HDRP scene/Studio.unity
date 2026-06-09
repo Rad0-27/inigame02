@@ -3496,7 +3496,7 @@ Transform:
   m_GameObject: {fileID: 919132149303012062}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.39412, y: 0.049999937, z: -2.3661685}
+  m_LocalPosition: {x: 2.09, y: 0.049999937, z: -1.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3562,11 +3562,13 @@ MonoBehaviour:
   top: {fileID: 3409537067185225583}
   lighting: {fileID: 8860232099913045736}
   moveSpeed: 2
-  heightSpeed: 1
+  heightSpeed: 0.3
   minHeight: 0
   maxHeight: 1
   panSpeed: 50
   tiltSpeed: 50
+  currentHeight: 0.24
+  poleScaleMultiplier: 70
 --- !u!114 &919132149303012068
 MonoBehaviour:
   m_ObjectHideFlags: 0

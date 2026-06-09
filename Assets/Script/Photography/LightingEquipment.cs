@@ -19,7 +19,10 @@ public class LightingEquipment : MonoBehaviour
     public float panSpeed = 50f;
     public float tiltSpeed = 50f;
 
-    float currentHeight;
+    public float currentHeight;
+
+    [Header("Pole")]
+    public float poleScaleMultiplier = 70f;
 
     Vector3 poleStartScale;
     Vector3 topStartPos;
@@ -91,7 +94,7 @@ public class LightingEquipment : MonoBehaviour
 
         scale.z =
             poleStartScale.z +
-            currentHeight;
+            (currentHeight * poleScaleMultiplier);
 
         pole.localScale =
             scale;
