@@ -15,31 +15,38 @@ public class SelectionManager : MonoBehaviour
     void SelectObject()
     {
         Ray ray =
-            Camera.main.ScreenPointToRay(Input.mousePosition);
+            Camera.main.ScreenPointToRay(
+                Input.mousePosition
+            );
 
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        if (
+            Physics.Raycast(
+                ray,
+                out RaycastHit hit
+            )
+        )
         {
-            if (hit.collider.gameObject.layer ==
-                LayerMask.NameToLayer("Selectable"))
+            Debug.Log("Hit: " + hit.collider.name);
+            if (
+                hit.collider.gameObject.layer ==
+                LayerMask.NameToLayer(
+                    "Selectable"
+                )
+            )
             {
                 SelectableObject selectable =
-    hit.collider.GetComponent<SelectableObject>();
+                    hit.collider.GetComponent<SelectableObject>();
 
                 if (selectable != null)
                 {
                     SelectedObject =
-                        selectable.rootTransform.gameObject;
+                        selectable.gameObject;
 
                     Debug.Log(
                         "Selected: " +
                         SelectedObject.name
                     );
                 }
-
-                Debug.Log(
-                    "Selected: " +
-                    SelectedObject.name
-                );
             }
         }
     }

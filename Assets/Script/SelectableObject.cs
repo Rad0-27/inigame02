@@ -2,35 +2,19 @@ using UnityEngine;
 
 public class SelectableObject : MonoBehaviour
 {
-    public Transform rootTransform;
-
-    Renderer rend;
-
-    Color originalColor;
-
-    void Start()
-    {
-        rend = GetComponentInChildren<Renderer>();
-
-        if (rend != null)
-        {
-            originalColor =
-                rend.material.color;
-        }
-    }
+    public GameObject selectionIndicator;
 
     void Update()
     {
-        if (SelectionManager.SelectedObject ==
-            gameObject)
+        bool selected =
+            SelectionManager.SelectedObject ==
+            gameObject;
+
+        if (selectionIndicator != null)
         {
-            if (rend != null)
-                rend.material.color = Color.yellow;
-        }
-        else
-        {
-            if (rend != null)
-                rend.material.color = originalColor;
+            selectionIndicator.SetActive(
+                selected
+            );
         }
     }
 }
