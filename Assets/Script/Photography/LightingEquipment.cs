@@ -116,7 +116,7 @@ public class LightingEquipment : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Z))
         {
-            lighting.Rotate(
+            top.Rotate(
                 0,
                 0,
                 -panSpeed *
@@ -127,7 +127,7 @@ public class LightingEquipment : MonoBehaviour
 
         if (Input.GetKey(KeyCode.X))
         {
-            lighting.Rotate(
+            top.Rotate(
                 0,
                 0,
                 panSpeed *

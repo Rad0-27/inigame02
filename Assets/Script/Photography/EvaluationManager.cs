@@ -11,6 +11,9 @@ public class EvaluationManager : MonoBehaviour
     [Header("UI")]
     public TMP_Text resultText;
 
+    public GameObject resultPanelW;
+    public GameObject resultPanelL;
+
     public void EvaluatePhoto()
     {
         LevelData level =
@@ -35,6 +38,15 @@ public class EvaluationManager : MonoBehaviour
             finalScore >= level.passScore
             ? "PASS"
             : "FAIL";
+
+        if (result == "PASS")
+        {
+            resultPanelW.SetActive(true);
+        }
+        else
+        {
+            resultPanelL.SetActive(true);
+        }
 
         resultText.text =
             "Direction : " + directionScore.ToString("F0") +

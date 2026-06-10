@@ -41,4 +41,11 @@ public class MainMenuUI : MonoBehaviour
             "GameMode"
         );
     }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().name
+        );
+    }
 }

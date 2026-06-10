@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level_01
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Basic Exposure
-  referenceImage: {fileID: 0}
-  targetAngle: 45
-  targetExposure: 0
-  passScore: 80
+  referenceImage: {fileID: 21300000, guid: 4d477bb095655f04d98ad65ef708b195, type: 3}
+  targetAngle: 135
+  targetEV: 0
+  passScore: 60
