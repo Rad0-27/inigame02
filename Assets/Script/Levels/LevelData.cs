@@ -12,8 +12,14 @@ public class LevelData : ScriptableObject
     public Sprite referenceImage;
 
     [Header("Target Values")]
-    public float targetAngle;
-    public float targetEV;
+    public float targetDistance = 1.5f;
+    public float targetAngle = 45f;
+    public float targetEV = 10f;
+
+    [Header("Tolerance")]
+    public float distanceTolerance = 0.3f;
+    public float angleTolerance = 10f;
+    public float evTolerance = 0.5f;
 
     [Header("Scoring")]
     public float passScore = 80f;

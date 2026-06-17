@@ -66,6 +66,8 @@ public class OrbitCameraController : MonoBehaviour
 
             cam.transform.localPosition =
                 direction * currentDistance;
+
+            Debug.Log(currentDistance);
         }
     }
 }

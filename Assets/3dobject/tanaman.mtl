@@ -1,0 +1,59 @@
+# Blender MTL File: 'tanaman.blend'
+# Material Count: 5
+
+newmtl FIber_Alpha
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.094118 0.047059 0.031373
+Ks 0.218182 0.218182 0.218182
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -o 2.184850 -5.104229 0.000000 -s 0.142857 0.142857 1.000000 C:\\Users\\DAYU\\blenderkit_data\\models\\monstera-plant_a085a84e-7ea1-44fd-ad6b-8a9b9846e570\\textures_2k\\Fiber_coco_norm.jpg
+map_Kd -o 2.184850 -5.104229 0.000000 -s 0.142857 0.142857 1.000000 C:\\Users\\DAYU\\blenderkit_data\\models\\monstera-plant_a085a84e-7ea1-44fd-ad6b-8a9b9846e570\\textures_2k\\Fiber_coco_dif.jpg
+map_d -o 2.184850 -5.104229 0.000000 -s 0.142857 0.142857 1.000000 C:\\Users\\DAYU\\blenderkit_data\\models\\monstera-plant_a085a84e-7ea1-44fd-ad6b-8a9b9846e570\\textures_2k\\Fiber_coco_mask.jpg
+
+newmtl Fiber
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.094118 0.047059 0.031373
+Ks 0.268182 0.268182 0.268182
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd -o 2.184850 -5.104229 0.000000 -s 0.142857 0.142857 1.000000 C:\\Users\\DAYU\\blenderkit_data\\models\\monstera-plant_a085a84e-7ea1-44fd-ad6b-8a9b9846e570\\textures_2k\\Fiber_coco_dif.jpg
+
+newmtl Glazed_ceramic
+Ns 396.371892
+Ka 1.000000 1.000000 1.000000
+Kd 0.752942 0.723055 0.637597
+Ks 0.763000 0.763000 0.763000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.001
+Ns 110.250015
+Ka 1.000000 1.000000 1.000000
+Kd 0.078187 0.147027 0.046665
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Soil_1
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.500000 0.500000 0.500000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\DAYU\\blenderkit_data\\models\\monstera-plant_a085a84e-7ea1-44fd-ad6b-8a9b9846e570\\textures_2k\\Ground_3_norm.jpg
+map_Kd C:\\Users\\DAYU\\blenderkit_data\\models\\monstera-plant_a085a84e-7ea1-44fd-ad6b-8a9b9846e570\\textures_2k\\Ground_3_1_dif.jpg
+map_Ks C:\\Users\\DAYU\\blenderkit_data\\models\\monstera-plant_a085a84e-7ea1-44fd-ad6b-8a9b9846e570\\textures_2k\\Ground_3_spec.jpg

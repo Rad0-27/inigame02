@@ -24,6 +24,22 @@ public class LightingEquipment : MonoBehaviour
     [Header("Pole")]
     public float poleScaleMultiplier = 70f;
 
+    [Header("Lighting")]
+
+    public LightRole role;
+
+    public float lumenOutput = 5000f;
+
+    public enum LightRole
+    {
+        Key,
+        Fill,
+        Back,
+        Rim,
+        Hair,
+        Background
+    }
+
     Vector3 poleStartScale;
     Vector3 topStartPos;
 
@@ -138,7 +154,7 @@ public class LightingEquipment : MonoBehaviour
 
         // Tilt (Y Axis)
 
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.F))
         {
             lighting.Rotate(
                 0,
@@ -149,7 +165,7 @@ public class LightingEquipment : MonoBehaviour
             );
         }
 
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKey(KeyCode.R))
         {
             lighting.Rotate(
                 0,
